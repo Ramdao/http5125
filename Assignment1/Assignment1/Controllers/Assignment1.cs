@@ -47,6 +47,33 @@ namespace Assignment1.Controllers
 
 
     }
+    //question 4
+    [Route("api/[controller]")]
+
+    public class q4 : ControllerBase
+    {
+        [HttpPost(template: "knockknock")]
+        public string knockknock()
+        {
+            return "Who's there?";
+
+        }
+
+
+    }
+    [Route("api/[controller]")]
+    public class q6 : ControllerBase
+    {
+        [HttpGet(template: "hexagon")]
+        public double side(double side)
+        {
+            side = ((3*Math.Sqrt(3))/2)*Math.Pow(side,2);
+            return side ;
+
+        }
+
+
+    }
 
 
 }
