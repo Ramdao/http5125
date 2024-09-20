@@ -59,7 +59,8 @@ namespace Assignment1.Controllers
         public string cube(int cube)
         {   
             return $"{Math.Pow(cube,3)}";
-
+            
+            
         }
 
 
@@ -95,7 +96,7 @@ namespace Assignment1.Controllers
     public class q5 : ControllerBase
     {
         [HttpPost(template: "secret")]
-        public string secret(int secret)
+        public string secret([FromBody] int secret)
         {
             return $"Shh.. the secret is {secret}";
 

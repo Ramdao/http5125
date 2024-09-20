@@ -102,7 +102,7 @@
       {
         "Name": "secret",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
