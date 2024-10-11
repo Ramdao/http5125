@@ -10,6 +10,14 @@ namespace Assignment2.Controllers
     public class J3Controller : ControllerBase
     {
         //https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022CCCJrProblemSet.html
+        /// <summary>
+        /// The instructions for tightening or loosening is not human friendly, takes the instuctions and converts to human friendly text.
+        /// Each line of output will consist of three parts, each separated by a single space: the uppercase letters referring to the strings,
+        /// tighten if the instruction contained a plus sign or loosen if the instruction contained a minus sign, and the number of turns.
+        /// </summary>
+        /// <param name="tune"> Takes the instruction as string and splits into + and - </param>
+        /// <returns> returns the string value of the tones that needs to tightened or loosen based on inistructions </returns>
+        /// 
         [HttpGet(template: "HarpTuning")]
         public string tuning(string tune)
         {
@@ -21,19 +29,36 @@ namespace Assignment2.Controllers
             string add = "";  
             for (int i = 0; i < arr.Length; i++)
             {
-                add += arr[i].ToString();
+              
+                    add += arr[i].ToString();
+              
+               
                 if (arr[i].ToString() == "+")
                 {
-                    add += arr[i + 1].ToString();
+                    i++;
+                    while (i<arr.Length && char.IsDigit(arr[i]))
+                    {
+                        add += arr[i].ToString();
+                        i++;
+                    }
+                    
+                    //add += arr[i + 1].ToString();
                     tighten.Add(add);
                     add = "";
-                    i++;
+                    i--;
                 } else if (arr[i].ToString() == "-")
                 {
-                    add += arr[i + 1].ToString();
+                    i++;
+                    while (i < arr.Length && char.IsDigit(arr[i]))
+                    {
+                        add += arr[i].ToString();
+                        i++;
+                    }
+                    
+                    //add += arr[i + 1].ToString();
                     loosen.Add(add);
                     add = "";
-                    i++;
+                    i--;
                 }
 
 

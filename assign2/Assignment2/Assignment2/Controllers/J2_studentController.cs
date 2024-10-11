@@ -3,12 +3,18 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.CodeAnalysis;
 
 namespace Assignment2.Controllers
-{
+{   //https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022CCCJrProblemSet.html
+    /// <summary>
+    /// Calculates total stars of each player in a team(Points*5 - Fouls*3), if each player more than 40 stars than the team is considered a gold team.
+    /// </summary>
+    /// <param name="score"> Takes the score in the format Points,Fouls</param>
+    /// <reutrn> if everyone on team scores greater than 40, return number of players that have 40 or more with "+", else number of players that have 40 or more </reutrn>
+    /// 
     [Route("api/[controller]")]
     [ApiController]
     public class J2_studentController : ControllerBase
     {
-        //https://cemc.uwaterloo.ca/sites/default/files/documents/2022/2022CCCJrProblemSet.html
+        
         [HttpGet(template: "FergusonballRatings")]
         public string points(string score)
         {

@@ -3,6 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Assignment2.Controllers
 {
+    /// <summary>
+    /// Everytime you add a pepper ({Ingredients}) it will increases SHU value, depending on the pepper
+    /// </summary>
+    /// <param name="Ingredients">Takes the 'Ingredients' to check what type of pepper it is and adds to the toal SHU</param>
+    /// <return> Total SHU value</return>
+    /// 
     [Route("api/[controller]")]
     [ApiController]
     public class J2Controller : ControllerBase
@@ -13,32 +19,39 @@ namespace Assignment2.Controllers
             List<string> list = new List<string>();
             list = Ingredients.Split(",").ToList();
             int value = 0;
-           for (int i=0; i<list.Count; i++)
-            {
-                if (list[i] == "Poblano")
+            foreach (string item in list) {
+                if (item == "Poblano")
                 {
                     value += 1500;
-                } else if (list[i] == "Mirasol")
+                }
+                else if (item == "Mirasol")
                 {
                     value += 6000;
-                } else if (list[i] == "Serrano")
+                }
+                else if (item == "Serrano")
                 {
                     value += 15500;
-                } else if (list[i] == "Cayenne")
+                }
+                else if (item == "Cayenne")
                 {
                     value += 40000;
 
-                } else if(list[i] == "Thai")
+                }
+                else if (item == "Thai")
                 {
                     value += 75000;
-                } else if (list[i] == "Habanero")
+                }
+                else if (item == "Habanero")
                 {
                     value += 125000;
-                } else
+                }
+                else
                 {
                     value += 0;
                 }
+
             }
+          
 
 
             return value;
