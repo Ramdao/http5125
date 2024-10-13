@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\n01685558_assignment2\\assignment2\\assignment2\\controllers\\j3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\controllers\\j3controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\n01685558_assignment2\\assignment2\\assignment2\\controllers\\j1_studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\controllers\\j1_studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\n01685558_assignment2\\assignment2\\assignment2\\controllers\\j2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\controllers\\j2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\n01685558_assignment2\\assignment2\\assignment2\\controllers\\j1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\controllers\\j1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\n01685558_assignment2\\assignment2\\assignment2\\controllers\\j2_studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EA88FFE-E709-4735-BD96-97BFFBBEEBA2}|Assignment2\\Assignment2.csproj|solutionrelative:assignment2\\controllers\\j2_studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "J2Controller.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J2Controller.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Controllers\\J2Controller.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J2Controller.cs",
+              "RelativeToolTip": "Assignment2\\Controllers\\J2Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T19:16:48.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "J1_studentController.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J1_studentController.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Controllers\\J1_studentController.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J1_studentController.cs",
+              "RelativeToolTip": "Assignment2\\Controllers\\J1_studentController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:58:39.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "J3Controller.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J3Controller.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Controllers\\J3Controller.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J3Controller.cs",
+              "RelativeToolTip": "Assignment2\\Controllers\\J3Controller.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T22:43:05.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "J1Controller.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J1Controller.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Controllers\\J1Controller.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J1Controller.cs",
+              "RelativeToolTip": "Assignment2\\Controllers\\J1Controller.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T18:25:23.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "J2_studentController.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J2_studentController.cs",
+              "RelativeDocumentMoniker": "Assignment2\\Controllers\\J2_studentController.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\N01685558_Assignment2\\Assignment2\\Assignment2\\Controllers\\J2_studentController.cs",
+              "RelativeToolTip": "Assignment2\\Controllers\\J2_studentController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:59:29.966Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
