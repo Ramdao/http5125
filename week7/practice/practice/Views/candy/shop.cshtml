@@ -1,0 +1,16 @@
+﻿@{
+    String name = "spooky candy";
+    string path = "/candy/welcome";
+}
+
+<h1>Order some candy</h1>
+<p>Choose the options for you candy order: @name</p>
+<a href ="@path">Back</a>
+
+<form method="POST" action="/candy/checkout">
+    <div>
+        <label for = "address">address</label>
+        <input type ="text" name = "address" />
+        <input type="submit" value="submit" />
+    </div>
+</form>
