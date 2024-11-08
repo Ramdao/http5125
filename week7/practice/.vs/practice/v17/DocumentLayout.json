@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\models\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\models\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\models\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\models\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\controllers\\dbcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\controllers\\dbcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\controllers\\candycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\controllers\\candycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\controllers\\authorcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\controllers\\authorcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\models\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\models\\candy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\sb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\sb.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|c:\\users\\radin\\onedrive\\desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\views\\candy\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1EB77664-9C4C-4AB2-BF70-FBB02D4D3FE4}|practice\\practice.csproj|solutionrelative:practice\\views\\candy\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,50 +58,139 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Candy.cs",
               "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\Candy.cs",
               "RelativeDocumentMoniker": "practice\\Models\\Candy.cs",
               "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\Candy.cs",
               "RelativeToolTip": "practice\\Models\\Candy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T20:49:59.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "db.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\db.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\db.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\db.cs",
+              "RelativeToolTip": "practice\\Models\\db.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:31:31.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbController1.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\dbController1.cs",
+              "RelativeDocumentMoniker": "practice\\Controllers\\dbController1.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\dbController1.cs",
+              "RelativeToolTip": "practice\\Controllers\\dbController1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:11:01.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "candyController.cs",
               "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\candyController.cs",
               "RelativeDocumentMoniker": "practice\\Controllers\\candyController.cs",
               "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\candyController.cs",
               "RelativeToolTip": "practice\\Controllers\\candyController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T16:08:04.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "checkout.cshtml",
-              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\checkout.cshtml",
-              "RelativeDocumentMoniker": "practice\\Views\\candy\\checkout.cshtml",
-              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\checkout.cshtml",
-              "RelativeToolTip": "practice\\Views\\candy\\checkout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T19:32:34.382Z",
+              "DocumentIndex": 5,
+              "Title": "authorController1.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\authorController1.cs",
+              "RelativeDocumentMoniker": "practice\\Controllers\\authorController1.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Controllers\\authorController1.cs",
+              "RelativeToolTip": "practice\\Controllers\\authorController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:17:30.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "author.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\author.cs",
+              "RelativeDocumentMoniker": "practice\\Models\\author.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Models\\author.cs",
+              "RelativeToolTip": "practice\\Models\\author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:02:06.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "practice\\Views\\candy\\Welcome.cshtml",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\Welcome.cshtml",
+              "RelativeToolTip": "practice\\Views\\candy\\Welcome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T02:25:03.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Program.cs",
+              "RelativeDocumentMoniker": "practice\\Program.cs",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Program.cs",
+              "RelativeToolTip": "practice\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:19:24.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\checkout.cshtml",
+              "RelativeDocumentMoniker": "practice\\Views\\candy\\checkout.cshtml",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\checkout.cshtml",
+              "RelativeToolTip": "practice\\Views\\candy\\checkout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-24T19:32:34.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "practice\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "practice\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T02:04:01.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "shop.cshtml",
               "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\shop.cshtml",
               "RelativeDocumentMoniker": "practice\\Views\\candy\\shop.cshtml",
@@ -77,8 +198,19 @@
               "RelativeToolTip": "practice\\Views\\candy\\shop.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T16:17:30.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T16:17:30.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "sb.cshtml",
+              "DocumentMoniker": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\sb.cshtml",
+              "RelativeDocumentMoniker": "practice\\Views\\candy\\sb.cshtml",
+              "ToolTip": "C:\\Users\\radin\\OneDrive\\Desktop\\uni\\http5125\\http5125\\week7\\practice\\practice\\Views\\candy\\sb.cshtml",
+              "RelativeToolTip": "practice\\Views\\candy\\sb.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T02:18:58.876Z"
             }
           ]
         }

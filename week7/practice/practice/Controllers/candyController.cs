@@ -2,15 +2,14 @@
 using System.Diagnostics;
 using practice.Models; // you need this for class
 
+using MySql.Data.MySqlClient;
+
 namespace practice.Controllers
 {
     public class candyController : Controller
-    {
-        [HttpGet]
-        public IActionResult Welcome()
-        {
-            return View();
-        }
+    { 
+
+       
         [HttpGet]
         public IActionResult shop()
         {
