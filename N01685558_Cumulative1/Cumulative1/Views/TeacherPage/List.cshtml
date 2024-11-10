@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Cumulative1.Models.Teacher>
+
+<h1>List of Teachers</h1>
+
+@foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
+{
+    <div>
+        <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId">@CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName</a>
+    </div>
+
+}
+
+<select id="teacherDropdown" onchange="redirectToTeacherPage()">
+    <option value="">Select by Hire Date</option>
+    @foreach (var CurrentTeacher in Model.OrderByDescending(t => t.hiredate))
+    {
+        <option value="@CurrentTeacher.TeacherId">
+            @CurrentTeacher.hiredate
+        </option>
+    }
+</select>
+
+<script>
+    function redirectToTeacherPage() {
+        var teacherId = document.getElementById("teacherDropdown").value;
+        window.location.href = `/TeacherPage/Show/${teacherId}`;
+    }
+</script>

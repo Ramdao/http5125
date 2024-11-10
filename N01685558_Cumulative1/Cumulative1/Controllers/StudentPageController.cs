@@ -1,0 +1,29 @@
+﻿using Cumulative1.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+
+namespace Cumulative1.Controllers
+{
+    
+    public class StudentPageController : Controller
+    {
+        private readonly StudentAPIController _api;
+
+        public StudentPageController(StudentAPIController api)
+        {
+            _api = api;
+        }
+
+        public IActionResult List()
+        {
+            List<Student> students = _api.ListStudents();
+            return View(students);
+        }
+        public IActionResult Show(int id)
+        {
+            Student SelectedStudent = _api.FindStudent(id);
+            return View(SelectedStudent);
+        }
+
+    }
+}

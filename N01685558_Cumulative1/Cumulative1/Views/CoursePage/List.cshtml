@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Cumulative1.Models.Course>
+
+<h1>List of Students</h1>
+
+@foreach (Cumulative1.Models.Course CurrentCourse in Model)
+{
+    <div>
+        <a href="/CoursePage/Show/@CurrentCourse.CourseId">@CurrentCourse.CourseCode - @CurrentCourse.CourseName</a>
+    </div>
+
+}
