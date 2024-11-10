@@ -1,9 +1,14 @@
 ﻿@model Cumulative1.Models.Teacher
 
-<h1>@Model.TeacherFName @Model.TeacherLName</h1>
 
-<div style="display:flex; flex-direction:column">
-    <p1>Employee Number: @Model.EmployeeNumber</p1>
-    <p1>Hire Date: @Model.hiredate</p1>
-    <p1>Salary: $@Model.salary</p1>
-</div>
+<body style="background-image: linear-gradient(cyan, blue);">
+    
+    <div style="display:flex; flex-direction:column; backdrop-filter(4px); border-style:solid;border-width:1px;border-color:aqua;background-image: linear-gradient(rgb(255, 255, 255,0.3), rgb(255, 255, 255,0.1)); border-radius:5px; padding:10px; ">
+        <h1>@Model.TeacherFName @Model.TeacherLName</h1>
+        <p1>Employee Number: @Model.EmployeeNumber</p1>
+        <p1>Hire Date: @Model.hiredate</p1>
+        <p1>Salary: $@Model.salary</p1>
+        <p><a href="/TeacherPage/List" style="color:crimson; font-weight:bold">Back</a></p>
+    </div>
+</body>
+

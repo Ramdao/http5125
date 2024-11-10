@@ -1,24 +1,31 @@
 ﻿@model IEnumerable<Cumulative1.Models.Teacher>
 
-<h1>List of Teachers</h1>
+<body style="background-color:darkseagreen;">
+    <h1 style="color:crimson; display:flex; justify-content:center;">List of Teachers</h1>
 
-@foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
-{
-    <div>
-        <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId">@CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName</a>
+    <div style="display: flex; flex-wrap:wrap; justify-content: center;">
+        @foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
+        {
+            <div style="background-color:antiquewhite; border-style:solid; display:flex; padding:5px; margin:5px; border-radius:5px; border-color:burlywood; width:300px; justify-content:center; flex-direction:row; align-content:center">
+                <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId" style=" text-decoration:none; color:orangered; ">
+                    @CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName
+                </a>
+            </div>
+        }
     </div>
 
-}
-
-<select id="teacherDropdown" onchange="redirectToTeacherPage()">
-    <option value="">Select by Hire Date</option>
-    @foreach (var CurrentTeacher in Model.OrderByDescending(t => t.hiredate))
-    {
-        <option value="@CurrentTeacher.TeacherId">
-            @CurrentTeacher.hiredate
-        </option>
-    }
-</select>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <select id="teacherDropdown" onchange="redirectToTeacherPage()" style="border-radius:5px; background-color:honeydew;">
+            <option value="">Select by Hire Date</option>
+            @foreach (var CurrentTeacher in Model.OrderByDescending(t => t.hiredate))
+            {
+                <option value="@CurrentTeacher.TeacherId">
+                    @CurrentTeacher.hiredate
+                </option>
+            }
+        </select>
+    </div>
+</body>
 
 <script>
     function redirectToTeacherPage() {

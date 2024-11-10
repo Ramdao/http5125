@@ -7,6 +7,8 @@ namespace Cumulative1.Controllers
 {
     public class CourseAPIController : Controller
     {
+
+        // dependency injection of database context
         private readonly SchoolDbContext _context;
 
         public CourseAPIController(SchoolDbContext context)
@@ -14,26 +16,42 @@ namespace Cumulative1.Controllers
             _context = context;
         }
 
+        /// <summary>
+        /// Returns a list of Course in the system
+        /// </summary>
+        /// <example>
+        /// GET api/Course/ListCourse -> [{"AuthorId":1,"AuthorFname":"Brian", "AuthorLName":"Smith"},{"AuthorId":2,"AuthorFname":"Jillian", "AuthorLName":"Montgomery"},..]
+        /// </example>
+        /// <returns>
+        /// A list of Course objects 
+        /// </returns>
+
+
+
         [HttpGet]
         [Route(template: "CoursetList")]
         public List<Course> ListCourse()
         {
-
+            // Create an empty list of course
             List<Course> course = new List<Course>();
 
+            // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
+                //Establish a new command (query) for our database
                 MySqlCommand Command = Connection.CreateCommand();
 
+                //SQL QUERY
                 Command.CommandText = "select * from courses";
 
+                // Gather Result Set of Query into a variable
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-
+                    //Loop Through Each Row the Result Set
                     while (ResultSet.Read())
                     {
-
+                        //Access Column information by the DB column name as an index
                         int CourseId = Convert.ToInt32(ResultSet["courseid"]);
                         string CourseCode = ResultSet["coursecode"].ToString();
                         int TeacherId = Convert.ToInt32(ResultSet["teacherid"]);
@@ -41,6 +59,7 @@ namespace Cumulative1.Controllers
                         DateTime FinishDate = Convert.ToDateTime(ResultSet["finishdate"]);
                         string CourseName= ResultSet["coursename"].ToString();
 
+                        //short form for setting all properties while creating the object
                         Course CurrentCourse = new Course()
                         {
                             CourseId = CourseId,
@@ -58,30 +77,47 @@ namespace Cumulative1.Controllers
             }
 
 
-
+            //Return the final list of course
             return course;
 
 
         }
+
+        /// <summary>
+        /// Returns an course in the database by their ID
+        /// </summary>
+        /// <example>
+        /// GET api/Course/FindCourse/3 -> {"AuthorId":3,"AuthorFname":"Sam","AuthorLName":"Cooper"}
+        /// </example>
+        /// <returns>
+        /// A matching course object by its ID. Empty object if course not found
+        /// </returns>
+
+
         [HttpGet]
         [Route(template: "FindCourse/{id}")]
-
+        //Create empty course
         public Course FindCourse(int id)
         {
             Course SelectedCourse = new Course();
 
+            // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
             {
                 Connection.Open();
+                //Establish a new command (query) for our database
                 MySqlCommand Command = Connection.CreateCommand();
+                // @id is replaced with a id
                 Command.CommandText = "select * from courses where courseid=@id";
                 Command.Parameters.AddWithValue("@id", id);
 
+                // Gather Result Set of Query into a variable
                 using (MySqlDataReader ResultSet = Command.ExecuteReader())
                 {
-
+                    //Loop Through Each Row the Result Set
                     while (ResultSet.Read())
                     {
+                        //Access Column information by the DB column name as an index
                         int CourseId = Convert.ToInt32(ResultSet["courseid"]);
                         string CourseCode = ResultSet["coursecode"].ToString();
                         int TeacherId = Convert.ToInt32(ResultSet["teacherid"]);
@@ -99,7 +135,7 @@ namespace Cumulative1.Controllers
                 }
             }
 
-
+            //Return SelectedCourse
             return SelectedCourse;
 
         }
