@@ -19,12 +19,12 @@ namespace Cumulative1.Controllers
         /// Returns a list of Students in the system
         /// </summary>
         /// <example>
-        /// GET api/Student/ListStudents -> [{"AuthorId":1,"AuthorFname":"Brian", "AuthorLName":"Smith"},{"AuthorId":2,"AuthorFname":"Jillian", "AuthorLName":"Montgomery"},..]
-        /// </example>
-        /// <returns>
-        /// A list of Student objects 
-        /// </returns>
-        [HttpGet]
+        /// GET api/Student/ListStudents -> {"studentId": 1,"studentFName": "Sarah", "studentLName": "Valdez", "studentNumber": "N1678","enroldate": "2018-06-18T00:00:00 }
+    /// </example>
+    /// <returns>
+    /// A list of Student objects 
+    /// </returns>
+    [HttpGet]
         [Route(template: "StudentList")]
         public List<Student> ListStudents()
         {
@@ -81,7 +81,7 @@ namespace Cumulative1.Controllers
         /// Returns an student in the database by their ID
         /// </summary>
         /// <example>
-        /// GET api/Student/FindStudent/3 -> {"AuthorId":3,"AuthorFname":"Sam","AuthorLName":"Cooper"}
+        /// GET api/Student/FindStudent/1 ->  {"studentId": 1,"studentFName": "Sarah", "studentLName": "Valdez", "studentNumber": "N1678","enroldate": "2018-06-18T00:00:00 }
         /// </example>
         /// <returns>
         /// A matching student object by its ID. Empty object if course not found

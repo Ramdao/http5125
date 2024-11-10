@@ -20,15 +20,15 @@ namespace Cumulative1.Controllers
         /// Returns a list of Course in the system
         /// </summary>
         /// <example>
-        /// GET api/Course/ListCourse -> [{"AuthorId":1,"AuthorFname":"Brian", "AuthorLName":"Smith"},{"AuthorId":2,"AuthorFname":"Jillian", "AuthorLName":"Montgomery"},..]
-        /// </example>
-        /// <returns>
-        /// A list of Course objects 
-        /// </returns>
+        /// GET api/Course/ListCourse -> {"courseId": 1, "courseCode": "http5101","teacherId": 1,"startDate": "2018-09-04T00:00:00","finishDate": "2018-12-14T00:00:00","courseName": "Web Application Development"}
+    /// </example>
+    /// <returns>
+    /// A list of Course objects 
+    /// </returns>
 
 
 
-        [HttpGet]
+    [HttpGet]
         [Route(template: "CoursetList")]
         public List<Course> ListCourse()
         {
@@ -81,20 +81,20 @@ namespace Cumulative1.Controllers
             return course;
 
 
-        }
+    }
 
         /// <summary>
         /// Returns an course in the database by their ID
         /// </summary>
         /// <example>
-        /// GET api/Course/FindCourse/3 -> {"AuthorId":3,"AuthorFname":"Sam","AuthorLName":"Cooper"}
-        /// </example>
-        /// <returns>
-        /// A matching course object by its ID. Empty object if course not found
-        /// </returns>
+        /// GET api/Course/FindCourse/1 -> {"courseId": 1,"courseCode": "http5101","teacherId": 1,"startDate": "2018-09-04T00:00:00","finishDate": "2018-12-14T00:00:00","courseName": "Web Application Development"}
+/// </example>
+/// <returns>
+/// A matching course object by its ID. Empty object if course not found
+/// </returns>
 
 
-        [HttpGet]
+[HttpGet]
         [Route(template: "FindCourse/{id}")]
         //Create empty course
         public Course FindCourse(int id)

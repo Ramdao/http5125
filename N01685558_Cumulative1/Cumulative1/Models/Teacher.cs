@@ -15,6 +15,7 @@
         // Teacher hiredate
         public DateTime hiredate { get; set; }
         //Teacher salary
+
         public double salary {  get; set; }    
     }
 }

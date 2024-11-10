@@ -15,18 +15,18 @@ namespace Cumulative1.Controllers
         {
             _context = context;
         }
-        /// <summary>
-        /// Returns a list of Teacher in the system
-        /// </summary>
-        /// <example>
-        /// GET api/Teacher/Listteacher -> [{"AuthorId":1,"AuthorFname":"Brian", "AuthorLName":"Smith"},{"AuthorId":2,"AuthorFname":"Jillian", "AuthorLName":"Montgomery"},..]
-        /// </example>
-        /// <returns>
-        /// A list of Teacher objects 
-        /// </returns>
+      /// <summary>
+     /// Returns a list of Teacher in the system
+     /// </summary>
+     /// <example>
+    /// GET api/Teacher/Listteacher -> {"teacherId": 1,"teacherFName": "Alexander","teacherLName": "Bennett","employeeNumber": "T378","hiredate": "2016-08-05T00:00:00","salary": 55.3}
+    /// </example>
+    /// <returns>
+    /// A list of Teacher objects 
+    /// </returns>
 
 
-        [HttpGet]
+    [HttpGet]
         [Route(template: "TeacherList")]
 
         public List<Teacher> ListTeachers()
@@ -83,7 +83,7 @@ namespace Cumulative1.Controllers
         /// Returns an Teacher in the database by their ID
         /// </summary>
         /// <example>
-        /// GET api/Teacher/FindTeacher/3 -> {"AuthorId":3,"AuthorFname":"Sam","AuthorLName":"Cooper"}
+        /// GET api/Teacher/FindTeacher/1 -> {"teacherId": 1,"teacherFName": "Alexander","teacherLName": "Bennett","employeeNumber": "T378","hiredate": "2016-08-05T00:00:00","salary": 55.3}
         /// </example>
         /// <returns>
         /// A matching Teacher object by its ID. Empty object if course not found
