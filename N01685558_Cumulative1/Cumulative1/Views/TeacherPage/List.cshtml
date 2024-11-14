@@ -4,32 +4,56 @@
     <h1 style="color:crimson; display:flex; justify-content:center;">List of Teachers</h1>
 
     <div style="display: flex; flex-wrap:wrap; justify-content: center;">
-        @foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
+        @if (Model != null && Model.Any())
         {
-            <div style="background-color:antiquewhite; border-style:solid; display:flex; padding:5px; margin:5px; border-radius:5px; border-color:burlywood; width:300px; justify-content:center; flex-direction:row; align-content:center">
-                <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId" style=" text-decoration:none; color:orangered; ">
-                    @CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName
-                </a>
-            </div>
+            @foreach (var CurrentTeacher in Model)
+            {
+                <div style="background-color:antiquewhite; border-style:solid; display:flex; padding:5px; margin:5px; border-radius:5px; border-color:burlywood; width:300px; justify-content:center; flex-direction:row; align-content:center">
+                    <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId" style="text-decoration:none; color:orangered;">
+                        @CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName
+                    </a>
+                </div>
+            }
+        }
+        else
+        {
+            <p style="color: crimson; text-align: center;">No teachers available.</p>
         }
     </div>
 
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-        <select id="teacherDropdown" onchange="redirectToTeacherPage()" style="border-radius:5px; background-color:honeydew;">
-            <option value="">Select by Hire Date</option>
-            @foreach (var CurrentTeacher in Model.OrderByDescending(t => t.hiredate))
-            {
-                <option value="@CurrentTeacher.TeacherId">
-                    @CurrentTeacher.hiredate
-                </option>
-            }
-        </select>
-    </div>
+    @if (Model != null && Model.Any())
+    {
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <select id="teacherDropdown" onchange="redirectToTeacherPage()" style="border-radius:5px; background-color:honeydew;">
+                <option value="">Select by Hire Date</option>
+                @foreach (var CurrentTeacher in Model.OrderByDescending(t => t.hiredate))
+                {
+                    <option value="@CurrentTeacher.TeacherId">
+                        @CurrentTeacher.hiredate.ToString("yyyy-MM-dd") <!-- formatted hire date -->
+                    </option>
+                }
+            </select>
+        </div>
+    }
+    else
+    {
+        <p style="text-align: center; color: crimson;">No teachers available for selection.</p>
+    }
 </body>
 
 <script>
     function redirectToTeacherPage() {
-        var teacherId = document.getElementById("teacherDropdown").value;
-        window.location.href = `/TeacherPage/Show/${teacherId}`;
+        try {
+            var teacherId = document.getElementById("teacherDropdown").value;
+
+            if (teacherId) {
+                window.location.href = `/TeacherPage/Show/${teacherId}`;
+            } else {
+                alert("Please select a teacher from the dropdown.");
+            }
+        } catch (error) {
+            console.error("An error occurred while navigating:", error);
+            alert("There was an error with your request. Please try again.");
+        }
     }
 </script>
