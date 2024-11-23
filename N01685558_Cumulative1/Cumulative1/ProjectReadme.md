@@ -1,4 +1,4 @@
-This Project gets data from the school database and displays information about Teachers, students and courses. 
+This Project gets data from the school database and displays information about teachers, students and courses. It can also add new information about teachers, studetns and courses into the the database.
 
 This Project uses xampp defualt settings
 user: root
