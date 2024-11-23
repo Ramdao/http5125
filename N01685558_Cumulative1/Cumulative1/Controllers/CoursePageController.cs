@@ -24,5 +24,31 @@ namespace Cumulative1.Controllers
             Course SelectedCourse = _api.FindCourse(id);
             return View(SelectedCourse);
         }
+        // GET: CoursePage/DeleteConfirm/{id}
+        public IActionResult DeleteConfirm(int id)
+        {
+            Course SelectedStudent = _api.FindCourse(id);
+            return View(SelectedStudent);
+        }
+        // DELETE: CoursePage/DeleteConfirm/{id}
+        public IActionResult Delete(int id)
+        {
+            int StudentId = _api.DeleteCourse(id);
+            // redirects to list action
+            return RedirectToAction("List");
+        }
+        //GET : CoursePage/New{id}
+        public IActionResult New(int id)
+        {
+            return View();
+        }
+        //POST: CoursePage/Create
+        public IActionResult Create(Course NewCourse)
+        {
+            int TeacherId = _api.AddCourse(NewCourse);
+
+
+            return RedirectToAction("Show", new { id = TeacherId });
+        }
     }
 }

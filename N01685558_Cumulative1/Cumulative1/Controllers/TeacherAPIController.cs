@@ -54,7 +54,7 @@ namespace Cumulative1.Controllers
                         string TeacherLName = ResultSet["teacherlname"].ToString();
                         string EmployeeNumber = ResultSet["employeenumber"].ToString();
                         DateTime hiredate = Convert.ToDateTime(ResultSet["hiredate"]);
-                        double salary = Convert.ToDouble(ResultSet["salary"]);
+                        decimal salary = Convert.ToDecimal(ResultSet["salary"]);
 
                         //short form for setting all properties while creating the object
                         Teacher CurrentTeacher = new Teacher()
@@ -116,7 +116,7 @@ namespace Cumulative1.Controllers
                         string TeacherLName = ResultSet["teacherlname"].ToString();
                         string EmployeeNumber = ResultSet["employeenumber"].ToString();
                         DateTime hiredate = Convert.ToDateTime(ResultSet["hiredate"]);
-                        double salary = Convert.ToDouble(ResultSet["salary"]);
+                        decimal salary = Convert.ToDecimal(ResultSet["salary"]);
        
                             SelectedTeacher.TeacherId = TeacherId;
                             SelectedTeacher.TeacherFName = TeacherFName;
@@ -133,8 +133,82 @@ namespace Cumulative1.Controllers
             //Return SelectedTeacher
             return SelectedTeacher;
         }
+        /// <summary>
+        /// Deletes an Teacher from the database
+        /// </summary>
+        /// <param name="TeacherId">Primary key of the Teacher to delete</param>
+        /// <example>
+        /// DELETE: api/TeacherData/DeleteTeacher -> 1
+        /// </example>
+        /// <returns>
+        /// Number of rows affected by delete operation.
+        /// </returns>
 
+        [HttpDelete(template: "DeleteTeacher/{TeacherId}")]
+        public int DeleteTeacher(int TeacherId)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+
+                Command.CommandText = "delete from teachers where teacherid=@id";
+                Command.Parameters.AddWithValue("@id", TeacherId);
+                return Command.ExecuteNonQuery();
+
+            }
+            // if failure
+            return 0;
+        }
+
+        /// <summary>
+        /// Adds an Teacher to the database
+        /// </summary>
+        /// <param name="TeacherData">Author Object</param>
+        /// <example>
+        /// POST: api/TeacherData/AddTeacher
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///	    "teacherFname":"Alexander",
+        ///	    "teacherLname":"Bennett",
+        ///	    "employeebumber":"T378",
+        ///	    "hiredate":"CURRENT.DATE()"
+        ///	    "salary":"55.30"
+        /// } -> 409
+        /// </example>
+        /// <returns>
+        /// The inserted Author Id from the database if successful. 0 if Unsuccessful
+        /// </returns>
+        [HttpPost(template: "AddTeacher")]
+        public int AddTeacher([FromBody] Teacher TeacherData)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+                Command.CommandText = "insert into teachers (teacherfname, teacherlname, employeenumber, hiredate, salary) values (@teacherfname,@teacherlname ,@employeenumber, CURRENT_DATE(), @salary)";
+                Command.Parameters.AddWithValue("@teacherfname", TeacherData.TeacherFName);
+                Command.Parameters.AddWithValue("@teacherlname", TeacherData.TeacherLName);
+                Command.Parameters.AddWithValue("@employeenumber", TeacherData.EmployeeNumber);
+                Command.Parameters.AddWithValue("@salary", TeacherData.salary);
+
+                Command.ExecuteNonQuery();
+
+                return Convert.ToInt32(Command.LastInsertedId);
+
+            }
+            // if failure
+            return 0;
+        }
     }
-  }
+
+}
+  
     
 

@@ -8,7 +8,8 @@
             <p>Employee Number: @Model.EmployeeNumber</p>
             <p>Hire Date: @Model.hiredate.ToString("yyyy-MM-dd")</p>
             <p>Salary: $@Model.salary</p>
-            <p><a href="/TeacherPage/List" style="color:crimson; font-weight:bold">Back</a></p>
+            <p><a href="/TeacherPage/List" style="color:crimson; font-weight:bold">Back to list</a></p>
+            <a style="color:crimson;" href="/TeacherPage/DeleteConfirm/@Model.TeacherId">Delete Information</a>
         </div>
     }
     else

@@ -139,6 +139,83 @@ namespace Cumulative1.Controllers
             return SelectedCourse;
 
         }
+        /// <summary>
+        /// Deletes an Course from the database
+        /// </summary>
+        /// <param name="CourseId">Primary key of the Teacher to delete</param>
+        /// <example>
+        /// DELETE: api/CourseData/DeleteCourse -> 1
+        /// </example>
+        /// <returns>
+        /// Number of rows affected by delete operation.
+        /// </returns>
+        [HttpDelete(template: "DeleteCourse/{CourseId}")]
+        public int DeleteCourse(int CourseId)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+
+                Command.CommandText = "delete from courses where courseid=@id";
+                Command.Parameters.AddWithValue("@id", CourseId);
+                return Command.ExecuteNonQuery();
+
+            }
+            // if failure
+            return 0;
+        }
+
+        /// <summary>
+        /// Adds an Course to the database
+        /// </summary>
+        /// <param name="CourseData">Author Object</param>
+        /// <example>
+        /// POST: api/CourseData/AddCourse
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///	    "courseCode":"Http5101",
+        ///	    "teacherid":"1",
+        ///	    "startdate":"2018-09-04",
+        ///	    "finishdate":"2018-09-04"
+        ///	    "coursename":"Web application"
+        ///	   
+        /// } -> 409
+        /// </example>
+        /// <returns>
+        /// The inserted Author Id from the database if successful. 0 if Unsuccessful
+        /// </returns>
+        [HttpPost(template: "AddCourse")]
+        public int AddCourse([FromBody] Course CourseData)
+        {
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+               
+                Command.CommandText = "insert into courses (coursecode, teacherid, startdate, finishdate, coursename) values (@coursecode,@teacherid,@startdate,@finishdate,@coursename)";
+                Command.Parameters.AddWithValue("@coursecode", CourseData.CourseCode);
+                Command.Parameters.AddWithValue("@teacherid", CourseData.TeacherId);
+                Command.Parameters.AddWithValue("@startdate", CourseData.StartDate);
+                Command.Parameters.AddWithValue("@finishdate", CourseData.FinishDate);
+                Command.Parameters.AddWithValue("@coursename", CourseData.CourseName);
+
+
+                Command.ExecuteNonQuery();
+
+                return Convert.ToInt32(Command.LastInsertedId);
+
+            }
+            // if failure
+            return 0;
+        }
 
     }
 }
