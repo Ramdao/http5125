@@ -62,7 +62,7 @@ namespace Cumulative1.Controllers
 
         // PUT: TeacherPage/Update{id}
 
-        [HttpPut]
+        [HttpPost]
         public IActionResult Update(int id, string TeacherFName, string TeacherLName, string EmployeeNumber, decimal salary, DateTime hireDate)
         {
             
