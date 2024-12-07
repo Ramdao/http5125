@@ -181,7 +181,7 @@ namespace Cumulative1.Controllers
         /// } -> 409
         /// </example>
         /// <returns>
-        /// The inserted Author Id from the database if successful. 0 if Unsuccessful
+        /// The inserted Teacher Id from the database if successful. 0 if Unsuccessful
         /// </returns>
         [HttpPost(template: "AddTeacher")]
         public int AddTeacher([FromBody] Teacher TeacherData)
@@ -206,9 +206,77 @@ namespace Cumulative1.Controllers
             // if failure
             return 0;
         }
-    }
 
+        /// <summary>
+        /// Updates an Teacher in the database. Data is Teacher object, request query contains ID
+        /// </summary>
+        /// <param name="TeacherData">Teacher Object</param>
+        /// <param name="TeacherId">The Teacher ID primary key</param>
+        /// <example>
+        /// PUT: api/Teacher/UpdateTeacher/1
+        /// Headers: Content-Type: application/json
+        /// Request Body:
+        /// {
+        ///	    "TeacherFname":"Alexander",
+        ///	    "TeacherLname":"Bennett",
+        ///	    "Salary":55.30,
+        ///	    
+        /// } -> 
+        /// {
+        ///     "AuthorId":1,
+        ///	    "AuthorFname":"Alexander",
+        ///	    "AuthorLname":"Bennett",
+        ///	    "employeenumber":"T378",
+        ///	    "hiredate":"2016-08-05"
+        ///	    "salary": 60.00
+        /// }
+        /// </example>
+        /// <returns>
+        /// The updated Teacher object
+        /// </returns>
+        [HttpPut("TeacherAuthor/{TeacherId}")]
+        public IActionResult UpdateTeacher(int TeacherId, [FromBody] Teacher TeacherData)
+        {
+            // Check if the data is empty or invalid
+            if (string.IsNullOrWhiteSpace(TeacherData.TeacherFName) ||
+                string.IsNullOrWhiteSpace(TeacherData.TeacherLName) ||
+                string.IsNullOrWhiteSpace(TeacherData.EmployeeNumber) ||
+                string.IsNullOrWhiteSpace(TeacherData.hiredate.ToString()) ||
+                TeacherData.salary <= 0)
+            {
+                return BadRequest("Invalid or missing data. Please provide valid information.");
+            }
+
+            // 'using' will close the connection after the code executes
+            using (MySqlConnection Connection = _context.AccessDatabase())
+            {
+                Connection.Open();
+                //Establish a new command (query) for our database
+                MySqlCommand Command = Connection.CreateCommand();
+
+                // parameterize query
+                Command.CommandText = "UPDATE teachers SET teacherfname=@teacherfname, teacherlname=@teacherlname, employeenumber=@employeenumber, hiredate=@hiredate, salary=@salary WHERE teacherid=@id";
+                Command.Parameters.AddWithValue("@teacherfname", TeacherData.TeacherFName);
+                Command.Parameters.AddWithValue("@teacherlname", TeacherData.TeacherLName);
+                Command.Parameters.AddWithValue("@employeenumber", TeacherData.EmployeeNumber);
+                Command.Parameters.AddWithValue("@hiredate", TeacherData.hiredate);
+                Command.Parameters.AddWithValue("@salary", TeacherData.salary);
+                Command.Parameters.AddWithValue("@id", TeacherId);
+
+                Command.ExecuteNonQuery();
+
+                return Ok(FindTeacher(TeacherId)); // Assuming FindTeacher returns the updated teacher
+            }
+        }
+
+
+
+    }
 }
-  
-    
+
+
+
+
+
+
 

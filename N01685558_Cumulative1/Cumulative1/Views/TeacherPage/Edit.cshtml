@@ -1,0 +1,91 @@
+﻿@model Cumulative1.Models.Teacher
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/TeacherPage/Show/@Model.TeacherId">Back</a>
+    </nav>
+    <h2>Update Teacher</h2>
+    <form method="POST" action="/TeacherPage/Update/@Model.TeacherId" id="form">
+        <div class="inputrow">
+            <label for="TeacherFname">First Name:</label>
+            <input type="text" id="TeacherFname" name="TeacherFname" value="@Model.TeacherFName" style="position:absolute; left:20%" />
+
+        </div>
+        <div class="inputrow">
+            <label for="TeacherLname">Last Name:</label>
+            <input type="text" id="TeacherLname" name="TeacherLname" value="@Model.TeacherLName" style="position:absolute; left:20%" />
+
+        </div>
+        <div class="inputrow">
+            <label for="EmployeeNumber">Employee Number:</label>
+            <input type="text" id="EmployeeNumber" name="EmployeeNumber" value="@Model.EmployeeNumber" style="position:absolute; left:20%" />
+        </div>
+        <div class="inputrow">
+            <label for="hiredate">Hire date:</label>
+            <input type="text" id="hiredate" name="hiredate" value="@Model.hiredate" style="position:absolute; left:20%" />
+        </div>
+        <div class="inputrow">
+            <label for="salary">Salary:</label>
+            <input id="salary" name="salary" value=@Model.salary style="position:absolute; left:20%">
+            
+        </div>
+        <div class="inputrow">
+            <input type="submit" value="Update Teacher" />
+        </div>
+    </form>
+</div>
+<script>
+    document.getElementById("form").addEventListener("submit", function (event) {
+        // Check if the TeacherFname field is empty
+        if (document.getElementById("TeacherFname").value === "") {
+            alert("Teacher first name is empty");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+        // Check if the TeacherLname field is empty
+        if (document.getElementById("TeacherLname").value === "") {
+            alert("Teacher last name is empty");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+
+        //checks format is T and then 3 numbers
+        const regex = /^T\d{3}$/;
+
+        if (!regex.test(document.getElementById("EmployeeNumber").value)) {
+            alert("Employee Number is invalid");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+
+     
+
+
+        var hireDateInput = document.getElementById("hiredate").value; // Get the hire date value
+        // for empyty date
+        if (hireDateInput === "") {
+            alert("Date is invalid");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+
+        var hireDate = new Date(hireDateInput);
+        var today = new Date(); // Get the current date
+
+      
+        // If user enters date in the future output error message
+        if (hireDate > today) {
+            alert("Hire date cannot be in the future.");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+
+        var salaryValue = document.getElementById("salary").value;
+
+        // Convert the salary value to a number
+        var salary = parseFloat(salaryValue);
+
+        // Check if salary is not a number or less than 0
+        if (isNaN(salary) || salary < 0) {
+            alert("Salary must be a number and 0 or more");
+            event.preventDefault(); // Prevent the form from submitting
+        }
+    });
+ 
+
+</script>
