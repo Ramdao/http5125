@@ -124,6 +124,27 @@
     ]
   },
   {
+    "ContainingType": "Cumulative1.Controllers.StudentAPIController",
+    "Method": "UpdateCourse",
+    "RelativePath": "api/StudentAPI/UpdateStudent/{StudentId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "StudentData",
+        "Type": "Cumulative1.Models.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Cumulative1.Controllers.TeacherAPIController",
     "Method": "AddTeacher",
     "RelativePath": "api/TeacherAPI/AddTeacher",
@@ -203,27 +224,6 @@
   },
   {
     "ContainingType": "Cumulative1.Controllers.TeacherAPIController",
-    "Method": "UpdateTeacher",
-    "RelativePath": "api/TeacherAPI/TeacherAuthor/{TeacherId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "TeacherId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "TeacherData",
-        "Type": "Cumulative1.Models.Teacher",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Cumulative1.Controllers.TeacherAPIController",
     "Method": "ListTeachers",
     "RelativePath": "api/TeacherAPI/TeacherList",
     "HttpMethod": "GET",
@@ -241,6 +241,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Cumulative1.Controllers.TeacherAPIController",
+    "Method": "UpdateTeacher",
+    "RelativePath": "api/TeacherAPI/TeacherUpdate/{TeacherId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TeacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "TeacherData",
+        "Type": "Cumulative1.Models.Teacher",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Cumulative1.Controllers.CourseAPIController",
@@ -261,6 +282,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Cumulative1.Controllers.CourseAPIController",
+    "Method": "UpdateCourse",
+    "RelativePath": "CourseUpdate/{CourseId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CourseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CourseData",
+        "Type": "Cumulative1.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Cumulative1.Controllers.CourseAPIController",

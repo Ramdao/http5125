@@ -217,8 +217,10 @@ namespace Cumulative1.Controllers
         /// Headers: Content-Type: application/json
         /// Request Body:
         /// {
+        ///     "AuthorId":1,
         ///	    "TeacherFname":"Alexander",
         ///	    "TeacherLname":"Bennett",
+        ///	    "employeenumber":"T378",
         ///	    "Salary":55.30,
         ///	    
         /// } -> 
@@ -234,7 +236,7 @@ namespace Cumulative1.Controllers
         /// <returns>
         /// The updated Teacher object
         /// </returns>
-        [HttpPut("TeacherAuthor/{TeacherId}")]
+        [HttpPut("TeacherUpdate/{TeacherId}")]
         public IActionResult UpdateTeacher(int TeacherId, [FromBody] Teacher TeacherData)
         {
             // Check if the data is empty or invalid

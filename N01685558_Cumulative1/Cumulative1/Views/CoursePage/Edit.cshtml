@@ -1,0 +1,52 @@
+﻿@model Cumulative1.Models.Course
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/CoursePage/Show/@Model.CourseId">Back</a>
+    </nav>
+    <h2>Update Course</h2>
+
+
+ <form method="POST" action="/CoursePage/Update/@Model.CourseId" id="form">
+
+        <div class="inputrow">
+            <label for="id">Course ID:</label>
+            <input type="text" id="id" name="id" value="@Model.CourseId" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="coursecode">Course Code:</label>
+            <input type="text" id="coursecode" name="coursecode" value="@Model.CourseCode" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="teacherid">Teacher ID:</label>
+            <input type="text" id="teacherid" name="teacherid" value="@Model.TeacherId" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="startdate">Start Date:</label>
+            <input type="text" id="startdate" name="startdate" value="@Model.StartDate" style="position:absolute; left:20%" />
+        </div>
+
+        <div class="inputrow">
+            <label for="finishdate">Finish Date:</label>
+            <input id="finishdate" name="finishdate" value=@Model.FinishDate style="position:absolute; left:20%">
+
+        </div>
+
+        <div class="inputrow">
+            <label for="coursename">Course Name:</label>
+            <input id="coursename" name="coursename" value=@Model.CourseName style="position:absolute; left:20%">
+
+        </div>
+
+        <div class="inputrow">
+            <input type="submit" value="Update Course" />
+        </div>
+
+ </form>
+</div>

@@ -1,0 +1,40 @@
+﻿@model Cumulative1.Models.Student
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/StudentPage/Show/@Model.StudentId">Back</a>
+    </nav>
+    <h2>Update Student</h2>
+
+
+    <form method="POST" action="/StudentPage/Update/@Model.StudentId" id="form">
+
+        <div class="inputrow">
+            <label for="studentfname">First Name:</label>
+            <input type="text" id="studentfname" name="studentfname" value="@Model.StudentFName" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="studentlname">Last Name:</label>
+            <input type="text" id="studentlname" name="studentlname" value="@Model.StudentLName" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="studentnumber">Student Number:</label>
+            <input type="text" id="studentnumber" name="studentnumber" value="@Model.StudentNumber" style="position:absolute; left:20%" />
+
+        </div>
+
+        <div class="inputrow">
+            <label for="enroldate">Enrol Date:</label>
+            <input type="text" id="enroldate" name="enroldate" value="@Model.enroldate" style="position:absolute; left:20%" />
+        </div>
+
+        <div class="inputrow">
+            <input type="submit" value="Update Student" />
+        </div>
+
+    </form>
+</div>

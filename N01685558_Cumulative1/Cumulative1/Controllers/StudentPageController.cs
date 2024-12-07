@@ -53,5 +53,34 @@ namespace Cumulative1.Controllers
             return RedirectToAction("Show", new { id = TeacherId });
         }
 
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Student SelectedCourse = _api.FindStudent(id);
+            return View(SelectedCourse);
+        }
+
+        [HttpPost]
+        public IActionResult Update(int id, string studentfname, string studentlname, string studentnumber, DateTime enroldate)
+        {
+
+            Student updatedStudent = new Student
+            { 
+               StudentFName = studentfname,
+               StudentLName = studentlname,
+               StudentNumber = studentnumber,
+               enroldate = enroldate
+            };
+
+
+            _api.UpdateCourse(id, updatedStudent);
+
+            // Redirect to show teacher details
+            return RedirectToAction("Show", new { id = id });
+        }
+
     }
+
+
 }

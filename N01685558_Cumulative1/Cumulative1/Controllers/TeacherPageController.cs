@@ -51,6 +51,8 @@ namespace Cumulative1.Controllers
             return RedirectToAction("Show", new { id = TeacherId });
         }
 
+        // GET: TeacherPage/Edit
+
         [HttpGet]
         public IActionResult Edit(int id)
         {
@@ -58,7 +60,9 @@ namespace Cumulative1.Controllers
             return View(SelectedTeacher);
         }
 
-        [HttpPost]
+        // PUT: TeacherPage/Update{id}
+
+        [HttpPut]
         public IActionResult Update(int id, string TeacherFName, string TeacherLName, string EmployeeNumber, decimal salary, DateTime hireDate)
         {
             
